@@ -1,40 +1,43 @@
 # Ferramentas de Trabalho
 
-## Python Básico
+## Python
 
-• https://www.youtube.com/watch?v=sRGpvbhOhQs
-• https://docs.python.org/3/tutorial/index.html
+- Básico
+  - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 
 ## IDE PyCharm e Debugging
 
-• https://www.youtube.com/watch?v=56bPIGf4us0
-• https://www.youtube.com/watch?v=sRGpvbhOhQs
+- [Pycharm Tutorial #1 - Setup & Basics](https://www.youtube.com/watch?v=56bPIGf4us0)
+- [Pycharm Tutorial #2 - Debugging](https://www.youtube.com/watch?v=sRGpvbhOhQs)
 
 ## Programação Orientada ao Objeto
 
-• https://www.youtube.com/watch?v=ZDaZ5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+[Python OOP Tutorial 1: Classes and Instances](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 
 ## Flask e Pandas
 
-• https://www.youtube.com/watch?v=mqhxxeeTbu0&lis
-t=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX
-• https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS
+- [Flask Tutorial #1 - How to Make Websites with Python](https://www.youtube.com/watch?v=mqhxxeeTbu0&list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX)
+- [Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - Installation and Loading Data](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS)
 
-## SQL Básico
+## SQL
 
-• https://pt.khanacademy.org/computing/computerprogramming/sql
-• https://www.w3schools.com/sql/
+- Básico
+  - [Unidade: Introdução a SQL: Consulta e gerenciamento de dados](https://pt.khanacademy.org/computing/computer-programming/sql)
+  - [SQL Tutorial](https://www.w3schools.com/sql/)
 
-## JS/HTML/CSS Básico
+## JS/HTML/CSS
 
-• https://www.w3schools.com/html/
-• https://www.w3schools.com/css/default.asp
-• https://www.w3schools.com/bootstrap4/default.asp
+- Básico
+  - [Tutorial HTML](https://www.w3schools.com/html/)
+  - [Tutorial de CSS](https://www.w3schools.com/css/default.asp)
+  - [Tutorial Bootstrap 4](https://www.w3schools.com/bootstrap4/default.asp)
 
-Git Básico
+## Git
 
-• https://git-scm.com/book/en/v2
+- Básico
+  - [Book](https://git-scm.com/book/en/v2)
 
-VBA Básico
+## VBA
 
-• https://pt.coursera.org/specializations/excel-vbacreative-problem-solvingInternal Use Only 
+- Básico
+  - [Programa de cursos integrados Excel/VBA for Creative Problem Solving](https://pt.coursera.org/specializations/excel-vba-creative-problem-solving)
