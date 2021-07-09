@@ -4,6 +4,7 @@
 
 - Básico
   - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+  - [Python para iniciantes](https://www.youtube.com/playlist?list=PLzFYWfRVHp5LUs1VjXr5dPf4xvHjcl1F8)
 
 ## IDE PyCharm e Debugging
 
