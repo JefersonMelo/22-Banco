@@ -4,7 +4,6 @@
 
 - Básico
   - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
-  - [Python para iniciantes](https://www.youtube.com/playlist?list=PLzFYWfRVHp5LUs1VjXr5dPf4xvHjcl1F8)
 
 ## IDE PyCharm e Debugging
 
@@ -42,3 +41,9 @@
 
 - Básico
   - [Programa de cursos integrados Excel/VBA for Creative Problem Solving](https://pt.coursera.org/specializations/excel-vba-creative-problem-solving)
+
+
+### Pesquisas Adicionais
+
+- [Interpolação de Strings em Python](https://pt.stackoverflow.com/questions/264702/como-fazer-interpola%C3%A7%C3%A3o-de-string-em-python)
+- [Python para iniciantes](https://www.youtube.com/playlist?list=PLzFYWfRVHp5LUs1VjXr5dPf4xvHjcl1F8)
