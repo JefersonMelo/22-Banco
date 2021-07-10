@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 1">
-      <change afterPath="$PROJECT_DIR$/POO/V2.py" afterDir="false" />
+    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 2">
+      <change afterPath="$PROJECT_DIR$/POO/V3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
       <recent name="C:\Users\jef_m\Documents\01-github\22-BTG\01-Paython\pythonProject\yt" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.V2">
+  <component name="RunManager" selected="Python.V3">
     <configuration name="V1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,19 +87,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="V3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\jef_m\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/POO" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\jef_m\Documents\01-github\22-BTG\01-Paython\pythonProject\yt\debug.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/POO/V3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,19 +195,19 @@
     <list>
       <item itemvalue="Python.del" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.debug" />
       <item itemvalue="Python.ex001" />
       <item itemvalue="Python.ex002" />
       <item itemvalue="Python.V1" />
       <item itemvalue="Python.V2" />
+      <item itemvalue="Python.V3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.V3" />
         <item itemvalue="Python.V2" />
         <item itemvalue="Python.V1" />
         <item itemvalue="Python.ex002" />
         <item itemvalue="Python.ex001" />
-        <item itemvalue="Python.debug" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625944594839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="POO aula 2">
+      <created>1625946637698</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625946637698</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +281,8 @@
     <MESSAGE value="debug pycharm" />
     <MESSAGE value="Pesquisas adicionais" />
     <MESSAGE value="POO aula 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="POO aula 1" />
+    <MESSAGE value="POO aula 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="POO aula 2" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
