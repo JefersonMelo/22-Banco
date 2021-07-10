@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 2">
-      <change afterPath="$PROJECT_DIR$/POO/V3.py" afterDir="false" />
+    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 3">
+      <change afterPath="$PROJECT_DIR$/POO/V4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625946637698</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="POO aula 3">
+      <created>1625949584343</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625949584343</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +289,8 @@
     <MESSAGE value="Pesquisas adicionais" />
     <MESSAGE value="POO aula 1" />
     <MESSAGE value="POO aula 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="POO aula 2" />
+    <MESSAGE value="POO aula 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="POO aula 3" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
