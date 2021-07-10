@@ -29,12 +29,12 @@ class Employee:
         cls.percent = amount
 
     @classmethod
-    def split_string(cls, emp_str):
+    def split_string(cls, emp_str):# trabalhando com Split()
         name, lastname, sal = str_1.split('-')
         return cls(name, lastname, sal)
 
     @staticmethod
-    def workday(day):
+    def workday(day):# trabalhando com datas
         if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
