@@ -49,3 +49,4 @@
 - [Python para iniciantes](https://www.youtube.com/playlist?list=PLzFYWfRVHp5LUs1VjXr5dPf4xvHjcl1F8)
 - [Introdução à programação com Python](https://web.digitalinnovation.one/course/introducao-a-programacao-com-python/learning/1a4f5956-fe77-4e5a-bc3a-5364e06b5c79?back=/browse)
 - [Curso em Vídeo](https://www.youtube.com/watch?v=nIHq1MtJaKs&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=7)
+- [Atalhos](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
