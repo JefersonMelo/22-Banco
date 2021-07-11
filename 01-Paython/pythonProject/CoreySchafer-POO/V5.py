@@ -15,9 +15,24 @@ class Employee:
     def apply_raise(self):
         self.sal = int(self.sal * self.percent)
 
+    # Métodos Especiais
+    def __repr__(self):
+        return "Employee({}, {}, {})".format(self.name, self.lastname, self.sal)
 
-# print(help(Devs))  # Retorna os Atributos da Classe
+    def __str__(self):
+        return '{}: {}'.format(self.fullname(), self.email)
+
+    def __add__(self, other):
+        return self.sal + other.sal
+
 
 emp_1 = Employee('Jef', 'Melo', 70000)
 emp_2 = Employee('Jon', 'Car', 50000)
 
+# print(repr(emp_1))
+# print(repr(emp_1))
+
+# print(emp_1.__repr__())
+# print(emp_1.__str__())
+
+print(emp_1 + emp_2)
