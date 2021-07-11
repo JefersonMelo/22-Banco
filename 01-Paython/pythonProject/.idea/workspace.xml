@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="Alteração nome da pasta">
+    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 4">
+      <change afterPath="$PROJECT_DIR$/CoreySchafer-POO/V5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreySchafer-POO/V4.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreySchafer-POO/V4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626021052370</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="POO aula 4">
+      <created>1626024496535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626024496535</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,7 +320,8 @@
     <MESSAGE value="commit inicial POO aula 4" />
     <MESSAGE value="POO aula 3" />
     <MESSAGE value="Alteração nome da pasta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteração nome da pasta" />
+    <MESSAGE value="POO aula 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="POO aula 4" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
