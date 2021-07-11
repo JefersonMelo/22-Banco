@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 3">
-      <change afterPath="$PROJECT_DIR$/POO/V4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625949584343</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit inicial POO aula 4">
+      <created>1625949759757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625949759757</updated>
+    </task>
+    <task id="LOCAL-00009" summary="POO aula 3">
+      <created>1625949784607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625949784607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +300,7 @@
     <MESSAGE value="Pesquisas adicionais" />
     <MESSAGE value="POO aula 1" />
     <MESSAGE value="POO aula 2" />
+    <MESSAGE value="commit inicial POO aula 4" />
     <MESSAGE value="POO aula 3" />
     <option name="LAST_COMMIT_MESSAGE" value="POO aula 3" />
   </component>
