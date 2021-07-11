@@ -51,3 +51,4 @@
 - [Curso em Vídeo](https://www.youtube.com/watch?v=nIHq1MtJaKs&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=7)
 - [Atalhos](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
 - [Métodos Especiais](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types)
+- [Lowercase](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python)
