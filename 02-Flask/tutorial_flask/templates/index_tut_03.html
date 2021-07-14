@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tutorial Flask</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-    {% for x in context %}
-        <p>{{x}}</p>
-    {% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Tutorial 3{% endblock %}
+{% block content %}
+<h1>Tutorial 3</h1>
+{% endblock %}
