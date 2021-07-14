@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %}Tutorial Flask - User{% endblock %}
 
 {% block content %}
     {% with messages = get_flashed_messages() %}
@@ -9,9 +9,7 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-<form action="#" method="post">
-    <p>Name: </p>
-    <p><input type="text" name="name"></p>
-    <p><input type="submit" value="submit"></p>
-</form>
+
+<p>Welcome, {{user}}</p>
+
 {% endblock %}
