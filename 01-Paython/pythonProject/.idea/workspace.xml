@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="commit inicial aula 6">
+    <list default="true" id="b22eab89-2a7b-414a-ad44-7874daf36448" name="Default Changelist" comment="POO aula 6 fim da lista">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreySchafer-POO/V6.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreySchafer-POO/V6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,13 +192,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.del" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.V2" />
       <item itemvalue="Python.V3" />
       <item itemvalue="Python.V4" />
       <item itemvalue="Python.V5" />
       <item itemvalue="Python.V6" />
+      <item itemvalue="Python.del" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
@@ -319,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626027044507</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="POO aula 6 fim da lista">
+      <created>1626028896403</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626028896403</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +351,8 @@
     <MESSAGE value="commit incial POO aula 5" />
     <MESSAGE value="POO aula 5" />
     <MESSAGE value="commit inicial aula 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit inicial aula 6" />
+    <MESSAGE value="POO aula 6 fim da lista" />
+    <option name="LAST_COMMIT_MESSAGE" value="POO aula 6 fim da lista" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
