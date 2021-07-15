@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from tutorial_blueprint_10 import second
+from admin.tutorial_blueprint_10 import second
 
 app = Flask(__name__)
 app.register_blueprint(second, url_prefix="/admin")
