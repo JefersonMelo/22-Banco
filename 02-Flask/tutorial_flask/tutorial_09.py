@@ -19,7 +19,8 @@ class users(db.Model):
         self.name = name
         self.email = email
 
-    
+
+@app.route("/index")    
 @app.route("/")
 def home():
     return render_template("index.html")
