@@ -1,16 +1,13 @@
-from flask import Flask, redirect, url_for, render_template, request, session, flash
-from datetime import timedelta
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template
+from tutorial_blueprint_10 import second
 
 app = Flask(__name__)
-app.secret_key = ":)"
+app.register_blueprint(second, url_prefix="/admin")
 
 
-@app.route("/index")    
 @app.route("/")
-def home():
-    return render_template("index.html")
+def test():
+    return "<h1>Test Home<h1>"
 
 if __name__ == "__main__":
-    db.create_all()
     app.run(debug=True) 
