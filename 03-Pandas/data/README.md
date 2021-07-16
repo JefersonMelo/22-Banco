@@ -1,6 +1,6 @@
-The Public 2020 Stack Overflow Developer Survey Results
+# The Public 2020 Stack Overflow Developer Survey Results
 
-Description:
+## Description
 
 The enclosed data set is the full, cleaned results of the 2020 Stack Overflow Developer Survey. Free response submissions and personally identifying information have been removed from the results to protect the privacy of respondents. There are three files besides this README:
 
@@ -14,17 +14,17 @@ Respondents were recruited primarily through channels owned by Stack Overflow. T
 
 As an incentive, respondents who finished the survey could opt in to a "Census" badge if they completed the survey.
 
-You can find the official published results here:
+### You can find the official published results here
 
-https://insights.stackoverflow.com/survey/2020
+[Survey-2020](https://insights.stackoverflow.com/survey/2020)
 
 Find previous survey results here:
 
-https://insights.stackoverflow.com/survey
+[Survey](https://insights.stackoverflow.com/survey)
 
-Legal:
+### Legal
 
-This database - The Public 2020 Stack Overflow Developer Survey Results - is made available under the Open Database License (ODbL): http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+This database - The Public 2020 Stack Overflow Developer Survey Results - is made available under the Open Database License (ODbL): [opendatacommons](http://opendatacommons.org/licenses/odbl/1.0/). Any rights in individual contents of the database are licensed under the Database Contents License: [opendatacommons](http://opendatacommons.org/licenses/dbcl/1.0/)
 
 TLDR: You are free to share, adapt, and create derivative works from The Public 2020 Stack Overflow Developer Survey Results as long as you attribute Stack Overflow, keep the database open (if you redistribute it), and continue to share-alike any adapted database under the ODbl.
 
