@@ -1,4 +1,4 @@
-# Desenvolvimento de SQL
+# Desenvolvimento SQL
 
 ## Criando tabelas
 
