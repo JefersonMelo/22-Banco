@@ -42,7 +42,6 @@
 - Básico
   - [Programa de cursos integrados Excel/VBA for Creative Problem Solving](https://pt.coursera.org/specializations/excel-vba-creative-problem-solving)
 
-
 ## Pesquisas Adicionais
 
 - [Interpolação de Strings em Python](https://pt.stackoverflow.com/questions/264702/como-fazer-interpola%C3%A7%C3%A3o-de-string-em-python)
@@ -52,3 +51,8 @@
 - [Atalhos](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
 - [Métodos Especiais](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types)
 - [Lowercase](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python)
+- [String Format Tutorial 10](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes)
+- [Datetime Pandas Tutorial 10](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects)
+- [Matplotlib-Conda Tutorial 10](https://anaconda.org/conda-forge/matplotlib)
+- [Matplotlib Tutorial 10](https://matplotlib.org/stable/users/installing.html)
+- [Matplotlib For VSCode](https://www.youtube.com/watch?v=-Wvt7lWxzf4)
