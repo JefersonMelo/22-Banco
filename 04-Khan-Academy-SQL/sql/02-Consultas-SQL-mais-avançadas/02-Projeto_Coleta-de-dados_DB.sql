@@ -228,16 +228,6 @@ INSERT INTO picks (pick_number, name, college, picked_by, position)
 INSERT INTO picks (pick_number, name, college, picked_by, position)
 	VALUES(99,"Paul Dawson","TCU","Cincinnati","OLB");
 
-/*
-CREATE TABLE picks(
-	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	pick_number INTEGER,
-	name TEXT,
-	college TEXT,
-	picked_by TEXT,
-	position TEXT
-);
-*/
 
 /*Qual é o valor médio, máximo e mínimo dos dados?*/
 
@@ -255,17 +245,8 @@ SELECT MAX(position) AS Position,
 COUNT(DISTINCT position) AS Maximum
 FROM picks;
 
-/*E se agruparmos os dados por categoria (utilizando HAVING)?*/
-
-SELECT position
-COUNT(position) AS position
-FROM picks
-GROUP BY position
-HAVING COUNT(position) > 2;
-
-
 /*De quais maneiras podemos agrupar os valores que não existem ainda (utilizando CASE)?*/
-SELECT COUNT(pick_number),
+SELECT COUNT(pick_number) AS Draft_Position,
     CASE
         WHEN pick_number <= 10 THEN "1-Talent AllStar"
         WHEN pick_number <= 32 THEN "2-Possible Talent"
