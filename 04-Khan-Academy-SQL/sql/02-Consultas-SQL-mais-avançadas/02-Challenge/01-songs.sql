@@ -1,3 +1,5 @@
+/*Desafio: Seletor de músicas de karaokê*/
+
 CREATE TABLE songs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,

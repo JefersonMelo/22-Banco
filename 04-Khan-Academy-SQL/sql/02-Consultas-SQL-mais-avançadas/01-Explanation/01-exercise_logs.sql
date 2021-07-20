@@ -1,3 +1,5 @@
+/*Consultas mais complexas com AND/OR*/
+
 CREATE TABLE exercise_logs(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,
