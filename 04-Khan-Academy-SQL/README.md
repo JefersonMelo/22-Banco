@@ -1,9 +1,10 @@
 # Quem realiza consultas SQL?
 
 Com apenas esse simples conjunto de registros de exercício, conseguimos criar várias consultas úteis e diferentes. Agora eu quero fazer uma pausa nas consultas para falar sobre quem normalmente faria todas as consultas, e com que finalidade.  
-Vamos imaginar que temos um aplicativo de exercício com milhares de usuários, armazenando dados similares à tabela de registros de exercício que usamos.  Esse aplicativo permite que os usuários insiram registros diários e visualizem seu progresso em um painel pessoal:  
+Vamos imaginar que temos um aplicativo de exercício com milhares de usuários, armazenando dados similares à tabela de registros de exercício que usamos.  
+Esse aplicativo permite que os usuários insiram registros diários e visualizem seu progresso em um painel pessoal:  
 
-![https://cdn.kastatic.org/ka-perseus-images/638a710e1756d7a33a1054ce296d0e8c51451eb5.png](https://cdn.kastatic.org/ka-perseus-images/638a710e1756d7a33a1054ce296d0e8c51451eb5.png)  
+![https://pt.khanacademy.org/computing/computer-programming/sql/more-advanced-sql-queries/a/who-issues-sql-queries](https://cdn.kastatic.org/ka-perseus-images/638a710e1756d7a33a1054ce296d0e8c51451eb5.png)  
 
 Para um aplicativo como esse, há algumas pessoas na equipe que poderiam realizar consultas SQL:  
 
