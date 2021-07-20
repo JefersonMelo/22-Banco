@@ -1,3 +1,5 @@
+/*Desafio: Criador de lista de reprodução*/
+
 CREATE TABLE artists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,

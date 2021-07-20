@@ -1,3 +1,5 @@
+/*Realizando consultas em sub-consultas com IN*/
+
 CREATE TABLE exercise_logs(id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,
     minutes INTEGER, 
