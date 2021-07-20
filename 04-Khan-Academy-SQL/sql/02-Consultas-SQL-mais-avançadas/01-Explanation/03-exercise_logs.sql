@@ -1,3 +1,5 @@
+/*Restringindo resultados agrupados com HAVING*/
+
 CREATE TABLE exercise_logs(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     type TEXT,

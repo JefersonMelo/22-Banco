@@ -1,3 +1,5 @@
+/*Desafio: O autor com mais palavras*/
+
 CREATE TABLE books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author TEXT,
