@@ -1,5 +1,7 @@
 /*Projeto: Coleta de dados*/
 
+/*Seleção de jogadores para os times de futebol americano*/
+
 /*
 Nós separamos uma lista de conjuntos de dados interessantes para você: 
 Melhores filmes, Países ordenados por população, Objetos solares por tamanho, Personagens da Marvel, 
@@ -19,12 +21,13 @@ Aqui estão algumas ideias:
 */
 
 CREATE TABLE picks(
-	id INTEGER PRIMARY KEY,
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	pick_number INTEGER,
 	name TEXT,
 	college TEXT,
 	picked_by TEXT,
-	position TEXT);
+	position TEXT
+);
 
 INSERT INTO picks (pick_number, name, college, picked_by, position)
 	VALUES(1,"Jameis Winston","Florida State","Tampa Bay","QB");
@@ -225,12 +228,59 @@ INSERT INTO picks (pick_number, name, college, picked_by, position)
 INSERT INTO picks (pick_number, name, college, picked_by, position)
 	VALUES(99,"Paul Dawson","TCU","Cincinnati","OLB");
 
+/*
+CREATE TABLE picks(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	pick_number INTEGER,
+	name TEXT,
+	college TEXT,
+	picked_by TEXT,
+	position TEXT
+);
+*/
 
 /*Qual é o valor médio, máximo e mínimo dos dados?*/
 
+SELECT position, 
+COUNT(position) AS quantity_position
+FROM picks
+GROUP BY position 
+ORDER BY quantity_position DESC;
+
+SELECT MIN(position) AS Position, 
+COUNT(DISTINCT position="CB") AS Minimum
+FROM picks;
+
+SELECT MAX(position) AS Position, 
+COUNT(DISTINCT position) AS Maximum
+FROM picks;
+
 /*E se agruparmos os dados por categoria (utilizando HAVING)?*/
 
+SELECT position
+COUNT(position) AS position
+FROM picks
+GROUP BY position
+HAVING COUNT(position) > 2;
+
+
 /*De quais maneiras podemos agrupar os valores que não existem ainda (utilizando CASE)?*/
+SELECT COUNT(pick_number),
+    CASE
+        WHEN pick_number <= 10 THEN "1-Talent AllStar"
+        WHEN pick_number <= 32 THEN "2-Possible Talent"
+        ELSE "3-Questionable Talent"
+    END AS "Expectation"
+FROM picks
+GROUP BY Expectation;
+
 
 /*De quais maneiras interessantes podemos filtrar os dados (utilizando AND/OR)?*/
+
+SELECT name, pick_number, picked_by, position
+FROM picks
+WHERE pick_number <= 32 
+AND picked_by = "Minnesota" 
+OR picked_by = "New England"
+ORDER BY position;
     
