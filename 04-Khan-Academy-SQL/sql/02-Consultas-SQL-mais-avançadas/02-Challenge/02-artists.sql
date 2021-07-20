@@ -67,3 +67,32 @@ a partir desses dados. Nessa primeira etapa, selecione o título, title, de toda
 artist, é a banda "Queen".
 */
 
+SELECT title 
+FROM songs
+WHERE artist = "Queen";
+
+/*
+Etapa 2
+Agora você vai fazer uma lista de reprodução "Pop". Para se preparar, selecione o nome,name, 
+de todos os artistas do gênero "Pop".
+(Dica: lembre-se de digitar "Pop", porque o SQL considera isso diferente de "pop").
+*/
+
+SELECT name
+FROM artists
+WHERE genre = "Pop";
+
+/*
+Etapa 3
+Para terminar de criar a lista de reprodução "Pop", adicione outra busca que vai selecionar o 
+título, title, de todas as músicas dos artistas do gênero "Pop". Ela deve usar IN em uma sub-busca 
+aninhada com base em sua busca anterior.
+*/
+
+SELECT title 
+FROM songs 
+WHERE artist IN (
+    SELECT name 
+    FROM artists
+    WHERE genre = "Pop"
+);
