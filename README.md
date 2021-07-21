@@ -56,3 +56,7 @@
 - [Matplotlib-Conda Tutorial 10](https://anaconda.org/conda-forge/matplotlib)
 - [Matplotlib Tutorial 10](https://matplotlib.org/stable/users/installing.html)
 - [Matplotlib For VSCode](https://www.youtube.com/watch?v=-Wvt7lWxzf4)
+
+### SQL
+
+- [UPDATE Vários Registros mesmo ID](https://pt.stackoverflow.com/questions/110331/realizando-update-em-v%C3%A1rios-registros-para-o-mesmo-id)
