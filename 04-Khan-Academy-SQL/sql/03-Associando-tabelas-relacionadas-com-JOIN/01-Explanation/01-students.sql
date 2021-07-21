@@ -1,3 +1,5 @@
+/*Associando tabelas relacionadas com JOIN*/
+
 CREATE TABLE students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT,
