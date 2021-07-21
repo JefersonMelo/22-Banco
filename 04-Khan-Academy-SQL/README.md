@@ -118,3 +118,58 @@ Eu sei, essa tabela não é tão legível quanto a antiga, que tinha toda a info
 É importante compreender como usar SQL para lidar com dados reais que foram divididos em várias tabelas relacionadas e juntar os dados das tabelas quando for necessário. Isso é feito usando um conceito chamado "join"s e é isso que vamos lhe mostrar a seguir.  
 
 - [Normalização de dados](https://pt.wikipedia.org/wiki/Normaliza%C3%A7%C3%A3o_de_dados)
+
+## SQL mais eficiente com otimização e planejamento de consulta
+
+Agora que você aprendeu várias formas de selecionar dados e está começando a usar SELECTs entre várias tabelas, é um bom momento para falar sobre a eficiência de suas consultas SQL - o quão rápido elas são executadas e como elas poderiam ser executadas mais rápido?  
+
+SQL é uma linguagem declarativa - cada consulta declara o que queremos que o SQL faça, mas ela não diz como.  Contudo, ao final, o como -- o "plano" -- é o que afeta a eficiência das consultas, então ele é muito importante.  
+
+### Por que consultas SQL precisam de um plano?
+
+Por exemplo, vamos supor que temos essa consulta simples:  
+
+```"
+SELECT * FROM books WHERE author = "J K Rowling";
+```
+
+Para esta consulta, há duas formas diferentes com as quais o SQL poderia encontrar os resultados:  
+
+- Fazer uma "varredura completa na tabela": olhar em todas as linhas da tabela e retornar as linhas correspondentes.
+- Criar um "índice": fazer uma cópia da tabela ordenada por autor e então fazer uma busca binária para encontrar a linha na qual a autora "J K Rowling" está, encontrar os IDs correspondentes e então fazer uma busca binária na tabela original que retorna as linhas que correspondem ao ID.  
+
+Qual forma é mais rápida? Depende dos dados e da frequência com que a consulta será executada. Se a tabela só tem 10 linhas, então uma varredura completa requer que a consulta olhe para apenas 10 linhas, e o primeiro plano funcionaria bem.  
+
+Se a tabela tivesse 10 milhões de linhas, então a varredura completa teria que procurar em 10 milhões de linhas. Seria mais rápido fazer uma busca binária em uma tabela ordenada - precisamos de apenas 23 tentativas para encontrar um valor em 10 milhões de linhas. Contudo, criar a tabela ordenada demoraria um pouco (aproximadamente 230 milhões de operações, dependendo da nossa estrutura). Se fôssemos realizar essa consulta muitas vezes (mais de 23 vezes), ou se já tivéssemos a tabela criada, então o seguindo plano seria melhor.  
+
+Como um mecanismo SQL decide qual plano usar? Esta é uma etapa importante da qual ainda não falamos, porque nos concentramos na sintaxe de nossas consultas e não em sua implementação. Conforme você avança no uso do SQL em bancos de dados maiores, a etapa do planejamento se torna cada vez mais importante.  
+
+### O ciclo de vida de uma consulta SQL  
+
+Podemos pensar em um mecanismo SQL que passa por essas etapas para cada consulta que passamos para ele:  
+
+![https://cdn.kastatic.org/ka-perseus-images/0886a3e020ce4ef32c1ac223bf7ed27432946c7f.png](https://cdn.kastatic.org/ka-perseus-images/0886a3e020ce4ef32c1ac223bf7ed27432946c7f.png)  
+
+1. O analisador de consulta garante que ela esteja sintaticamente correta (por exemplo, verifica se há vírgulas fora do lugar) e semanticamente correta (por exemplo, verifica se a tabela existe) e retorna erros em caso negativo. Se ela estiver correta, então ele a transforma em uma expressão algébrica e a passa para a próxima etapa.  
+2. A etapa de planejamento e otimização da consulta realiza o trabalho duro de pensar. Primeiro, ela realiza otimizações simples (melhorias que sempre resultam em uma performance melhor, como simplificar 5*10 em 50). Então, ela considera diferentes "planos de consulta" que podem ter otimizações diferentes, estima o custo (de processamento e de tempo) de cada plano de consulta, com base no número de linhas nas tabelas relevantes, e então escolhe o melhor plano e o passa para a próxima etapa.  
+3. A etapa de execução da consulta recebe o plano e o transforma em operações para o banco de dados, retornando os resultados caso eles existam.  
+
+### Onde entram os humanos?
+
+O planejamento e a otimização da consulta acontece para cada consulta e você poderia passar sua vida emitindo consultas SQL sem perceber isso. Contudo, uma vez que você começa a lidar com conjuntos maiores de dados, você começa a se importar mais com a velocidade das suas consultas e a se perguntar se há alguma forma de melhorar a performance delas.  
+
+Muitas vezes, especialmente para consultas complexas, há maneiras que você pode usar para otimizá-las, o que é conhecido como refinamento de consultas.  
+
+A primeira etapa é identificar que consultas você quer ajustar, o que você pode descobrir vendo qual de suas chamadas a bancos de dados estão levando mais tempo ou usando mais recursos, usando por exemplo um profiler SQL. Às vezes você pode descobrir uma consulta com performance ruim depois que ela derrubar todo o seu banco de dados devido à demora para ser realizada. Com sorte, você vai descobri-la antes disso.  
+
+A próxima etapa é compreender como um mecanismo SQL específico executa uma consulta, e todos os sistemas SQL vêm com uma forma de descobrir isso. No SQLite, você pode digitar [EXPLAIN QUERY PLAN](https://www.sqlite.org/eqp.html) na frente de qualquer SQL para ver o que ele está fazendo nos bastidores. Se você usar isso, esteja preparado para se aprofundar em [EXPLAIN QUERY PLAN  e sua documentação](https://www.sqlite.org/eqp.html), porque a "explicação" é muito detalhada e específica da implementação. Se você está usando outro mecanismo SQL, você pode pesquisar por "[how do I get an execution plan in X](https://stackoverflow.com/questions/7359702/how-do-i-obtain-a-query-execution-plan-in-sql-server)".
+
+Agora vem a parte difícil: a otimização manual para melhorar o plano de execução. Isso também depende das particulares do mecanismo SQL que você está usando e das particularidades dos seus próprios dados.  
+
+Por exemplo, lembra-se da consulta que discutimos no início? Se soubéssemos de antemão que precisamos fazer centenas de consultas que se restringiam a WHERE na coluna autor, então poderíamos criar o índice explicitamente, usando CREATE INDEX. Então, o mecanismo SQL poderia usar esse índice para encontrar as linhas correspondentes de forma eficiente. Você pode ler este guia sobre [planejamento de consultas em SQLite](https://www.sqlite.org/queryplanner.html) para entender quando os índices são úteis.  
+
+Criar índices pode, muitas vezes, tornar consultas repetidas mais eficientes. Mas também existem muitas outras abordagens para isso. Para o SQLite, você pode ver mais na [visão geral do planejador de consulta](https://www.sqlite.org/optoverview.html) e prestar bastante atenção nas seções "manuais".  
+
+Não podemos abordar todas as complexidades da otimização e do ajuste de consultas aqui, então recomendo que você se aprofunde nesses assuntos quando você precisar deles.  
+
+(Aqui estão informações detalhadas sobre planejadores SQL diferentes que eu achei interessantes: [1-SQL Server Query Optimizer](https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/),[2-SQL Server Query Optimizer](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/the-sql-server-query-optimizer/), [Oracle SQL Tuning](https://docs.oracle.com/cd/B19306_01/server.102/b14211/sql_1016.htm#g42927), [MSSQL Execution Plan Basics](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/execution-plan-basics/))
