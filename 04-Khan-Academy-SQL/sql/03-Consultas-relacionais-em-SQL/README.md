@@ -1,32 +1,4 @@
-# SQL
-
-## Quem realiza consultas SQL?
-
-Com apenas esse simples conjunto de registros de exercício, conseguimos criar várias consultas úteis e diferentes. Agora eu quero fazer uma pausa nas consultas para falar sobre quem normalmente faria todas as consultas, e com que finalidade.  
-Vamos imaginar que temos um aplicativo de exercício com milhares de usuários, armazenando dados similares à tabela de registros de exercício que usamos.  
-Esse aplicativo permite que os usuários insiram registros diários e visualizem seu progresso em um painel pessoal:  
-
-![https://cdn.kastatic.org/ka-perseus-images/638a710e1756d7a33a1054ce296d0e8c51451eb5.png](https://cdn.kastatic.org/ka-perseus-images/638a710e1756d7a33a1054ce296d0e8c51451eb5.png)  
-
-Para um aplicativo como esse, há algumas pessoas na equipe que poderiam realizar consultas SQL:  
-
-### Engenheiros de software
-
-Eles são aqueles que constroem o backend (a lógica do lado do servidor) e o frontend (o HTML/CSS/JS que renderizam os dados e os formulários). Os engenheiros de software poderiam usar SQL para a comunicação no lado do servidor com o banco de dados que armazena todos os dados do usuário. Eles precisaram saber como fazer quaisquer consultas necessárias para o frontend. Por exemplo, se os usuários vissem um painel quando se conectam de quanto exercício eles fizeram naquele dia, o engenheiro precisaria descobrir como fazer um SELECT filtrado por data e usuário. Eles precisariam descobrir como inserir dados e atualizá-los (o que veremos mais tarde)  
-
-### Cientistas de dados
-
-Eles analisam os dados e tentam aprender mais sobre os usuários, podendo dar sugestões sobre como ajudá-los a se exercitarem mais. Eles precisam de um conhecimento profundo das instruções SELECT, porque eles precisam realizar consultas bastante complexas para fazer as análises nas quais eles estão interessados. For example, they might use a SELECT to analyze what percentage of users were more likely to do more exercise if they started off exercising in the morning, maybe using CASE and GROUP BY.
-
-### Gerentes de produto
-
-Eles tomam as decisões na empresa, são os que olham para os dados, falam com os usuários, analisam o mercado e tentam entender como melhorar um produto para obter mais usuários, aumentar a satisfação dos usuários ou para aumentar os lucros. Eles geralmente precisam ter conhecimento de consultas SQL para que eles possam olhar para as estatísticas e de uso e tentar compreender que partes do produto estão sendo mais usadas, quais partes estão sendo usadas de formas surpreendentes e o que não está sendo usado. Eles podem usar um SELECT para ver quantos usuários usam o campo "heart_rate" caso estejam debatendo a remoção do campo.  
-
-Como todas essas pessoas estão trabalhando na mesma empresa, eles podem e devem compartilhar seus conhecimentos sobre como usar SQL em seus bancos de dados uns com os outros. Nem todos precisam ser experts em SQL, mas considerando minha experiência, muitas pessoas em uma empresa podem se beneficiar em ter um conhecimento básico de SQL, e alguns deles podem querer usar recursos mais avançados, conforme ficam mais sofisticados.  
-
-Com isso em mente, vá em frente e aprenda recursos mais avançados...!
-
-## Separando dados em tabelas relacionadas
+# Separando dados em tabelas relacionadas
 
 Até agora, trabalhamos com apenas uma tabela por vez e vimos que dados interessantes podemos selecionar a partir da tabela. Mas na verdade, na maioria das vezes, temos nossos dados distribuídos em várias tabelas e essas tabelas estão "relacionadas" umas às outras de alguma forma.  
 
@@ -172,4 +144,4 @@ Criar índices pode, muitas vezes, tornar consultas repetidas mais eficientes. M
 
 Não podemos abordar todas as complexidades da otimização e do ajuste de consultas aqui, então recomendo que você se aprofunde nesses assuntos quando você precisar deles.  
 
-(Aqui estão informações detalhadas sobre planejadores SQL diferentes que eu achei interessantes: [1-SQL Server Query Optimizer](https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/),[2-SQL Server Query Optimizer](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/the-sql-server-query-optimizer/), [Oracle SQL Tuning](https://docs.oracle.com/cd/B19306_01/server.102/b14211/sql_1016.htm#g42927), [MSSQL Execution Plan Basics](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/execution-plan-basics/))
+(Aqui estão informações detalhadas sobre planejadores SQL diferentes que eu achei interessantes: SQL Server Query Optimizer, [Oracle SQL Tuning](https://docs.oracle.com/cd/B19306_01/server.102/b14211/sql_1016.htm#g42927), [MSSQL Execution Plan Basics](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/execution-plan-basics/))
