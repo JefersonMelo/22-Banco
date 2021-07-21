@@ -38,38 +38,17 @@ CREATE TABLE student_projects(
 INSERT INTO student_projects (student_id, title)
     VALUES (1, "Carrotapault");
 
-SELECT * 
-FROM student_grades;
-
-/* cross join */
-SELECT * 
-FROM student_grades, students;
-
-/* implicit inner join*/
-SELECT *
-FROM student_grades, students
-WHERE student_grades.student_id = students.id;
-
-/* explicit inner join*/
-SELECT *
-FROM students
-JOIN student_grades
-ON students.id = student_grades.student_id;
-
-/* explicit inner join*/
-SELECT first_name, last_name, email, test, grade 
-FROM students
-JOIN student_grades
-ON students.id = student_grades.student_id
-WHERE grade > 90;
-
-/* explicit inner join*/
-SELECT  students.first_name, 
+SELECT students.first_name, 
         students.last_name, 
-        students.email, 
-        student_grades.test, 
-        student_grades.grade
+        student_projects.title
 FROM students
-JOIN student_grades
-ON students.id = student_grades.student_id
-WHERE grade > 90;
+JOIN student_projects
+ON students.id = student_projects.student_id;
+
+/* outer join */ 
+SELECT students.first_name, 
+        students.last_name, 
+        student_projects.title
+FROM students
+LEFT OUTER JOIN student_projects
+ON students.id = student_projects.student_id;
