@@ -1,4 +1,4 @@
-/*The SQL AND, OR and NOT Operators*/
+
 
 /*The WHERE clause can be combined with AND, OR, and NOT operators.
 
@@ -9,31 +9,7 @@ The AND and OR operators are used to filter records based on more than one condi
 
 The NOT operator displays a record if the condition(s) is NOT TRUE.*/
 
-SELECT * 
-FROM Customers
-WHERE Country='Germany' 
-AND City='Berlin';
 
-SELECT * 
-FROM Customers
-WHERE Country='Germany' 
-OR Country='Spain';
-
-SELECT * 
-FROM Customers
-WHERE NOT Country='Germany';
-
-SELECT * 
-FROM Customers
-WHERE Country='Germany' AND (
-    City='Berlin' 
-    OR City='München'
-); 
-
-SELECT * 
-FROM Customers
-WHERE NOT Country='Germany' 
-AND NOT Country='USA'; 
 
 /*SQL ORDER BY Keyword*/
 
