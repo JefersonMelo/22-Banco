@@ -17,7 +17,8 @@ from a particular City from the "Customers" table:*/
 CREATE PROCEDURE SelectAllCustomers 
     @City nvarchar(30)
 AS
-SELECT * FROM Customers WHERE City = @City
+SELECT * FROM Customers 
+WHERE City = @City
 GO;
 
 /*Execute the stored procedure above as follows:*/
